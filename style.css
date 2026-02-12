@@ -714,37 +714,53 @@ button {
     /* Adjust Main Content Padding */
     #main-content {
         padding: 10px;
+        justify-content: flex-start;
+        /* Start from top to prevent clipping */
+        padding-top: 40px;
+        /* Add some top breathing room */
     }
 
     /* Scale down interactive elements */
     .lantern-large {
-        transform: scale(0.8);
+        transform: scale(0.7);
+        margin: 10px 0;
     }
 
     .tower-container {
-        /* Already scaled 0.6, maybe go a bit smaller or just ensure margins are safe */
-        transform: scale(0.5);
-        margin: -50px auto;
-        /* Adjust negative margin for smaller scale */
+        /* Scale down more to fit */
+        transform: scale(0.45);
+        margin: -60px auto;
+    }
+
+    .gift-item {
+        margin: 5px;
+    }
+
+    .gift-text {
+        font-size: 1.2rem;
+        margin-top: 5px;
     }
 
     .hershey-bar {
-        width: 160px;
-        height: 100px;
+        width: 140px;
+        height: 80px;
     }
 
     .hershey-bar .brand {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     /* Button Adjustments */
     .buttons {
         gap: 10px;
+        height: auto;
+        /* Allow auto height */
+        padding: 10px 0;
     }
 
     button {
-        padding: 12px 25px;
-        font-size: 1.2rem;
+        padding: 10px 20px;
+        font-size: 1.1rem;
     }
 
     /* Final Images */

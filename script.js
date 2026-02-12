@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Remove scroll restriction (though we are hiding overflow on body roughly via reset/fixed, 
         // but let's keep it clean)
-        document.body.style.overflow = 'hidden'; // Keep hidden, we don't want scrolling in step mode
+        document.body.style.overflow = 'auto'; // Allow scrolling so content doesn't get cut off
 
         mainContent.classList.remove('hidden');
         mainContent.classList.add('visible');

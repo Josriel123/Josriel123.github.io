@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURITY ALERT</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SCAM OVERLAY -->
+    <div id="scam-overlay">
+        <div class="error-box">
+            <h1>ERROR CRÍTICO DEL SISTEMA</h1>
+            <p>Virus no identificado detectado en República Dominicana.</p>
+            <p>Nivel de Amenaza: <span class="blink">EXTREMO</span></p>
+            <div id="debug-btn">ARREGLAR SISTEMA</div>
+        </div>
+    </div>
+
+    <!-- REAL CONTENT (Hidden initially) -->
+    <div id="main-content" class="hidden">
+        <audio id="bg-music" loop>
+            <source src="./assets/rapunzel_song.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <div class="lantern-container"></div>
+
+        <!-- STEP 1: Intro -->
+        <section id="step-1" class="step-section active">
+            <h2>Escaneo del Sistema Completo</h2>
+            <p>Nivel de Amenaza: 0. Nivel de Belleza: Máximo.</p>
+            <p>Error encontrado: No estás aquí en Miami conmigo.</p>
+            <button class="next-btn" data-next="step-2">Continuar</button>
+        </section>
+
+        <!-- STEP 2: Rapunzel -->
+        <section id="step-2" class="step-section hidden">
+            <h2>La Chica con los Ojos de Luz</h2>
+            <p>Tus ojos me recuerdan a las luces... pero más brillantes.</p>
+
+            <div id="user-lantern-container">
+                <div id="user-lantern" class="lantern-large"></div>
+                <p id="lantern-instruction">Haz click para encender tu linterna</p>
+            </div>
+
+            <button class="next-btn hidden" id="lantern-next-btn" data-next="step-3">Continuar</button>
+        </section>
+
+        <!-- STEP 3: Gifts -->
+        <section id="step-3" class="step-section hidden">
+            <p class="instruction-text">(Haz click en ambos regalos para abrirlos)</p>
+            <div class="gift-item" id="hershey-gift">
+                <div class="hershey-bar">
+                    <span class="brand">Hershey's</span>
+                </div>
+                <p class="gift-text hidden">Porque eres más dulce que esto.</p>
+            </div>
+
+            <div class="gift-item" id="tower-gift">
+                <div class="tower-container" id="rapunzel-tower">
+                    <div class="tower-roof"></div>
+                    <div class="tower-top">
+                        <div class="tower-window">
+                            <div class="eye left-eye"></div>
+                            <div class="eye right-eye"></div>
+                        </div>
+                    </div>
+                    <div class="tower-mid"></div>
+                    <div class="tower-base"></div>
+                    <div class="vines"></div>
+                </div>
+                <p class="gift-text hidden">Esos no son los ojos de Rapunzel, son los tuyos amor</p>
+            </div>
+
+            <!-- Hidden initially, revealed after interaction -->
+            <button class="next-btn hidden" id="gift-next-btn" data-next="step-listen">Continuar</button>
+        </section>
+
+        <!-- STEP 3.5: Listen to Music -->
+        <section id="step-listen" class="step-section hidden">
+            <h2>Escucha...</h2>
+            <p>Presiona el botón siguiente después de escuchar la canción por completo.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <button class="next-btn" data-next="step-4">Estoy lista</button>
+        </section>
+
+        <!-- STEP 4: Proposal -->
+        <section id="step-4" class="step-section hidden">
+            <h2>Tengo una pregunta...</h2>
+            <p>¿Quieres ser mi novia?</p>
+            <div class="buttons">
+                <button id="yes-btn">SÍ</button>
+                <button id="no-btn">NO</button>
+            </div>
+        </section>
+
+        <!-- STEP 5: Success -->
+        <section id="step-success" class="step-section hidden">
+            <h2>¡Sabía que dirías que sí! ❤️</h2>
+            <div class="final-image-container">
+                <!-- Placeholder image -->
+                <img src="./assets/final_photo.jpg" alt="Nosotros" class="final-photo">
+                <img src="./assets/final_photo2.jpg" alt="Nosotros" class="final-photo">
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

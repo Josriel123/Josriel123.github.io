@@ -685,3 +685,76 @@ button {
     object-fit: cover;
     /* Ensure they look good if different sizes */
 }
+
+/* MOBILE OPTIMIZATIONS */
+@media (max-width: 768px) {
+
+    /* Typrography Scaling */
+    h2 {
+        font-size: 3rem;
+        /* Down from 5rem */
+    }
+
+    p {
+        font-size: 1.2rem;
+        /* Down from 2rem */
+        padding: 0 15px;
+        /* Add side padding for text */
+    }
+
+    .error-box h1 {
+        font-size: 2rem;
+        /* Down from 3rem */
+    }
+
+    .error-box p {
+        font-size: 1rem;
+    }
+
+    /* Adjust Main Content Padding */
+    #main-content {
+        padding: 10px;
+    }
+
+    /* Scale down interactive elements */
+    .lantern-large {
+        transform: scale(0.8);
+    }
+
+    .tower-container {
+        /* Already scaled 0.6, maybe go a bit smaller or just ensure margins are safe */
+        transform: scale(0.5);
+        margin: -50px auto;
+        /* Adjust negative margin for smaller scale */
+    }
+
+    .hershey-bar {
+        width: 160px;
+        height: 100px;
+    }
+
+    .hershey-bar .brand {
+        font-size: 1.5rem;
+    }
+
+    /* Button Adjustments */
+    .buttons {
+        gap: 10px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1.2rem;
+    }
+
+    /* Final Images */
+    .final-image-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .final-photo {
+        min-width: 120px;
+        min-height: 120px;
+    }
+}
